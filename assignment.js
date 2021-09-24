@@ -9,6 +9,9 @@ const obj = {};
 arr.forEach((el,index) => obj['num'+index]= el);
 console.log(obj);
 
+const mapElement = arr.map(el => ({num : el}));
+console.log(mapElement);
+
 //using reduce() method to reduce array to single value
 const reduceVal = arr.reduce((prev , cur) => {
     return prev * cur ;
